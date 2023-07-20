@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.pcs": "vb",
+        "algorithm": "cpp",
+        "cmath": "cpp"
+    }
+}
