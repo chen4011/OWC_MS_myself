@@ -34,7 +34,7 @@ espNowResetMS resetMS;      //通过将 pdMonitorData 声明为 espNowSendData �
 const float ri[3] = {98.5E3, 101.4E3, 100.5E3};        // Input resistor: ~100K Ohms
 const float rf = 200;          // Feedback resistor: 200 Ohms
 const float rg = 100;          // Ground resistor: 100 Ohms
-float sample = 50;           // ADC measure sample
+float sample = 50;           // ADC measure sample，取樣數越高執行時間越久，累積2000筆資料約需1秒鐘
 adcRead adc;                   // ADC setting and current convert
 float current[3] = {1e-4, 1e-4, 1e-4};                 // Store current data of 3 PDs
 float signalVolt[32];                 // 
