@@ -40,7 +40,7 @@ float current[3] = {1e-4, 1e-4, 1e-4};                 // Store current data of 
 float signalVolt[32];                 // 
 
 // MPU6050 ypr angle of PD
-TwoWire I2CMPU = TwoWire(1);
+TwoWire I2CMPU = TwoWire(1);      //the TwoWire object I2CMPU is being initialized to use the I2C bus number 1
 bool dmpReady = false;         // Set true if DMP init was successful
 float yprDeg[3];               // MPU6050 ypr angle of PD in degrees
 float *yprPD;                  // MPU6050 ypr angle of PD in radian
